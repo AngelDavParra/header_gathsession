@@ -1,2 +1,11 @@
 @use "../abstracts/abstracts" as ab;
 
+body {
+ background-color: ab.$bg-black;
+ padding: 30px 70px;
+
+ background-image: url(/src/img/content.png);
+ background-repeat: no-repeat;
+ background-position: top 100px right;
+ background-size: 620px;
+}
