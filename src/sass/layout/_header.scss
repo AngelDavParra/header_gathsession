@@ -1,0 +1,40 @@
+@use "../abstracts/abstracts" as ab;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+
+    & .logo {
+        width: 170px;
+    }
+
+    nav {
+        margin-right: 80px;
+        ul {
+            display: flex;
+            gap: 30px;
+
+            a {
+                text-decoration: none;
+                color: ab.$grey;
+                font-size: 13px;
+                font-weight: 100;
+                &:hover {
+                    position: relative;
+                    color: white;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        height: 2px;
+                        background-color: ab.$pink;
+                        width: 60%;
+                        bottom: -10px;
+
+                    }
+                }
+                
+            }
+        }
+    }
+}

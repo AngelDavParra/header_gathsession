@@ -1,0 +1,30 @@
+@use "../abstracts/abstracts" as ab;
+
+
+.service {
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    &_items {
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        &-description {
+            color:white;
+            font-size: 13px;
+        }
+
+        &-icon {
+            width: 25px;
+            background-color: rgba(255, 255, 255, 0.25);
+            padding: 10px;
+            border-radius: 10px
+;
+        }
+    }
+}

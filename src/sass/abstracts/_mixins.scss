@@ -1,0 +1,18 @@
+@use "../abstracts/variables" as var;
+
+@mixin boton(){
+  display: inline-block;
+  padding: 10px 40px;
+  color: white;
+  border-radius: 10px 10px 10px 0px;
+  text-decoration: none;
+  background-color: var.$pink;
+  font-size: 13px;
+
+  &:hover {
+    background-color: var.$pink-ligth ;
+  }
+
+}
+
+
